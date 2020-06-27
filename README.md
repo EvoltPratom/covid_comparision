@@ -7,5 +7,7 @@
 
 Extract the files
 Run the following
+
 <code> pip install -r requirements.txt </code>
- <code>python main.py</code>
+
+<code>python main.py</code>
