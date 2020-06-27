@@ -5,13 +5,13 @@ import pandas as pd
 root = Tk()
 
 root.state('zoomed')
-header = Label(root, text='Coronavirus Comparison', font='Monsterrat 30 bold ')
+header = Label(root, text='COVID Comparision', font='Monsterrat 30 bold ')
 header.grid(row=0, column=0, padx = 450, pady=20)
 
 buttonframe = LabelFrame(root, text='Chart Option', padx=20, pady=20)
 buttonframe.grid(row=6)
 
-prompt = LabelFrame(root, text="ENTER COUNTRY NAME(S)", width=100, pady=10, padx=10)
+prompt = LabelFrame(root, text="Enter names of two or more countries, eg: nepal, india ", width=100, pady=10, padx=10)
 prompt.grid(row=2, column=0, pady=0, padx=25)
 
 country = Entry(prompt, width=100,  bd=3,  font='Monsterrat 15', justify='center')
