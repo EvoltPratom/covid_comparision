@@ -1,4 +1,4 @@
-# Covid_comparision
+# Covid Comparision
 
 (In windows use Powershell)
 
