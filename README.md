@@ -6,6 +6,7 @@
 
 
 Extract the files
+
 <code>Expand-Archive covid.zip -DestinationPath covid</code>
 
 Run the following
