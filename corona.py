@@ -41,6 +41,9 @@ def get_cases(c_name, type_of_data):
 
 def get_stats(c_name):
     values = []
+    val_names = ['country', 'tot-cases', 'new-cases',  'tot-death', 'new-death',
+                 'tot-recovered', 'serious', 'active', 'tot-tests']
+
     update = requests.get('http://www.worldometers.info/coronavirus/').content
     soup = BeautifulSoup(update, 'lxml')
 
@@ -51,20 +54,18 @@ def get_stats(c_name):
     for val in country1:
         try:
             values.append(val.text)
+
         except:
             pass
-
-    val_names = ['country', 'tot-cases', 'new-cases', 'tot-death',
-                 'new-death', 'tot-recovered', 'active', 'serious', 'tot-tests']
-    values = values[:-1]
-    x = values[10]
-    values = values[:-4]
+    x = values[12]
+    # print(x)
+    values = values[1:9]
     values.append(x)
+    # print(values)
     return dict(zip(val_names, values))
 
 
 
-# yo file lai copy garera rakh tero sublime ma arko naam rakhera
-# ani yeslai import gar tero code ma get_stats bhanne fxn le #string linxa ani return garxa list
+
 # print(get_stats('India'))
 # print(get_cases('nepal', 'graph-active-cases-total'))
