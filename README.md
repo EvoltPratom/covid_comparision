@@ -22,6 +22,9 @@ eg:
 >>> cr.get_stats('Nepal')
 {'country': 'Nepal', 'tot-cases': '12,309', 'new-cases': '', 'tot-death': '28 ', 'new-death': '', 'tot-recovered': '2,834', 'serious': '', 'active': '9,447', 'tot-tests': '504,910'}
 >>>
+```
+
+```sh
 >>> help(cr.get_cases)
 get_cases(c_name, type_of_data)
     type of data can be the following
