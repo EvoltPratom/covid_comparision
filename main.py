@@ -126,7 +126,7 @@ def activecases():
 
         for key in dictionary:
             x_axis.append(key.replace('"',''))
-            if dictionary[key]=='null':
+            if dictionary[key]=='null' or dictionary[key]=='':
                 y_axis.append(0)
                 continue
             y_axis.append(int(dictionary[key]))
